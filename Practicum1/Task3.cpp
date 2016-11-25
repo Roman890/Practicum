@@ -16,6 +16,7 @@ int main()
  float temp = 0.0;
  char c = '0';
 
+
  printf("Enter angle in a form 45.00D or 45.00R:");
  scanf("%f%c", &angle, &c);
  printf("Angle = %.2f%c\n", angle, c);
