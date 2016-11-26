@@ -1,5 +1,6 @@
 /*
-
+A program that takes a string from the user and
+displays it on the screen, aligning the center
 */
 
 
