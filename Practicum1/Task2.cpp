@@ -4,7 +4,6 @@ specified time ("Good morning "Good afternoon", etc.)
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <conio.h>
 
 int main()
 {
@@ -32,6 +31,6 @@ int main()
   else if (hour > 21 && hour < 5)
    printf("Good night");
 
- _getch();
+
  return 0;
 }

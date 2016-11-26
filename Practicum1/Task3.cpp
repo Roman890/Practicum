@@ -8,7 +8,6 @@ For example:
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <conio.h>
 
 int main()
 {
@@ -33,6 +32,5 @@ int main()
   printf("Angle in radian: %f", temp);
  }
  
- _getch();
  return 0;
 }

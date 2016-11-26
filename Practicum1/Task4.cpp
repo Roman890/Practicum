@@ -6,23 +6,24 @@ numbers with accuracy up to 1 mark. 1 foot = 12 inches. 1 inch = 2.54 cm
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <conio.h>
 
 int main()
 {
+ float inch = 2.54;
+ float foot;
+ foot =  inch * 12;
  
-  int foot, inch;
-  foot = inch = 0;
+ float yourfoot, yourinch;
 
-  float height;
-  printf("Enter  your height (foot, inch):  ");
-  scanf("%d", &foot);
-  scanf("%d", &inch);
-  
-  height = inch * 2.54;
-  printf("Height in cm:  %.1f", height);
+ float height;
+ printf("Enter  your height (foot, inch):  \n");
+ scanf("%f", &yourfoot);
+ scanf("%f", &yourinch);
+ 
+ printf("%f", yourfoot);
+ height = (foot * yourfoot) + (yourinch * inch);
+ printf("Height in cm:  %f", height);
   
  
- _getch();
  return 0;
 }
