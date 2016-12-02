@@ -1,10 +1,4 @@
 /*
-The program that cleans the string from extra spaces. Spaces at start of line,
-end of line and spaces between words, if their number is greater than 1
-*/
-
-#include <stdio.h>
-/*
 The program that cleans the string from extra spaces.
 */
 
