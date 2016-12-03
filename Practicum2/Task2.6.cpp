@@ -11,8 +11,6 @@ int main(int argc, char *argv[])
 	char string[80];
 	int i = 0;
 	printf("Enter a string: ");
-	
-
 	scanf("%[^\n]s", &string);
 	for (int i = 0; string[i] != '\0'; i++)
 	{
