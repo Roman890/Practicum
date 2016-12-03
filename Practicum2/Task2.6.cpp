@@ -1,18 +1,32 @@
 /*
-The program that cleans the string from extra spaces.
+The program that cleans the string from extra spaces. Spaces at start of line,
+end of line and spaces between words, if their number is greater than 1
 */
 
 #include <stdio.h>
+#include <string.h>
 
-int main()
+int main(int argc, char *argv[])
 {
- char s,z;// z - a current character
- printf("Enter your string with point:  ");
- for (z =s = ' '; z != '.'; s = z)
- {
-  scanf("%c", &z);
-  if (z == ' ' && s == ' ') continue; // if spaces < 1 - pass
-  printf("%c", z);
- }
+	char string[80];
+	int i = 0;
+	printf("Enter a string: ");
+	
+
+	scanf("%[^\n]s", &string);
+	for (int i = 0; string[i] != '\0'; i++)
+	{
+		if (string[i] != ' ')
+			printf("%c", string[i]);
+		if (string[i] != ' ' && string[i + 1] == ' ')
+			printf("%c", string[i + 1]);
+		if (string[strlen(string) - 1] == 0)
+			printf("%c", '\0');
+	}
+
  return 0;
 }
+
+
+
+	
