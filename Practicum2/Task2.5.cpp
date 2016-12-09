@@ -33,14 +33,12 @@ int main()
 		for (int i = 0; i < 8; i++)
 		{
 			ww = rand() % 3 + 1;
-			int nn;
 			switch (ww)
 			{
-				case 1:  nn = rand() % RANGE_0_9 + ASCII_0; break;
-				case 2:  nn = rand() % RANGE_A_Z + ASCII_A; break;
-				case 3:  nn = rand() % RANGE_a_z + ASCII_a; break;
+				case 1:  string[i] = rand() % RANGE_0_9 + ASCII_0; break;
+				case 2:  string[i] = rand() % RANGE_A_Z + ASCII_A; break;
+				case 3:  string[i] = rand() % RANGE_a_z + ASCII_a; break;
 			}
-			string[i] = char(nn);
 		}
 		for (int j = 0; j < 8; j++)
 		{
