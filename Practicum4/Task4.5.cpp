@@ -16,7 +16,7 @@ int main()
 
 	while (!feof(file))
 	{
-		if (fgets(A[++i], 120, file))
+                if (fgets(A[++i], 50, file))
 		{
 			b[size] = &A[i][0];
 			size++;
