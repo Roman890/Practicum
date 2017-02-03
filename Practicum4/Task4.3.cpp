@@ -7,12 +7,13 @@ bool polindrom(char* w)
 {
 	char *p, *d;
 	int len = strlen(w);
-	p = &w[0];
+	
 	
 
 	for (int i = 0; i < len; ++i)
 	{
-		d = &w[len -1];
+		p = &w[i];
+		d = &w[len -i-1];
 		if (*p != *d)
 		{
 			return false;
